@@ -1,0 +1,39 @@
+{
+
+  "description": "Download ultimate-guitar.com Official GPX Tabs [Pro Account Only]",
+  "manifest_version": 2,
+  "name": "Save Ultimate-Guitar Official Tab",
+  "version": "1.1",
+  
+
+  "permissions": [
+    "webRequest", "webRequestBlocking",
+    "https://tabs.ultimate-guitar.com/tab/*",
+    "storage",
+    "unlimitedStorage",
+    "downloads"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "57.0a1",
+      "id": "ug-pro-gpx-save-1.1@tsundokul"
+    }
+  },
+
+  "developer": {
+    "name": "Timofte Daniel",
+    "url": "https://twitter.com/tim17d"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "48": "pick-active.svg"
+    }
+  }
+
+}
