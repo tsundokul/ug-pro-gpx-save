@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous">
+    <title>Download GPX Files</title>
+    <link rel="icon" href="pick-active.svg">
+  </head>
+
+  <body class="mx-auto mt-5">
+    <div class="container py-1">
+      <div class="row mt-1">
+        <div class="col-12">
+          <button type="button" class="float-end btn btn-sm btn-warning" id="save_all">save all</button>
+          <button type="button" class="float-end btn btn-sm btn-warning mx-1" id="clear">clear</button>
+        </div>
+      </div>
+
+      <div class="container mt-1" id="items">
+      </div>
+    </div>
+
+    <template id="template-entry">
+      <div class="col-10 my-1 entry">
+        <span class="name"></span>
+      </div>
+      <div class="col-2">
+        <button type="button" class="float-end btn btn-sm btn-light my-1 save invisible">
+          save
+        </button>
+      </div>
+    </template>
+  </body>
+
+  <script src="downloads.js"></script> 
+  <style>
+    body>.container {
+      width: 700px;
+      border-radius: 4px;
+      background-color: white;
+    }
+
+    body {
+      background-color: antiquewhite;
+    }
+
+    .entry {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .item:hover .save {
+      visibility: visible !important;
+    }
+
+    .item:hover {
+      background: antiquewhite;
+      border-radius: 4px;
+    }
+  </style>
+</html>

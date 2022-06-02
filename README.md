@@ -10,7 +10,6 @@ This Add-On requires you to be logged in on ultimate-guitar.com with a Pro accou
 - Log in to your Pro account
 - Go to an 'Official' tab page
 - Click on 'SWITCH TO THE OLD PLAYER' - this needs to be done only once
-- The bookmark icon will turn full yellow once the GPX file is ready for download
-- Click on extension's icon to save it
+- Click on extension's icon to open the download page
 
 <p align="center">💜</p>
